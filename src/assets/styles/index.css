@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Import Google Font (optional but safe fallback if not in HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-zinc-100 text-zinc-900 antialiased;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  button {
+    @apply transition-colors duration-200;
+  }
+
+  input, textarea {
+    @apply outline-none;
+  }
+}
